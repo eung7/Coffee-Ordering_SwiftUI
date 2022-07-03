@@ -13,6 +13,7 @@
 		E55EAD7B28714E3600EE4610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55EAD7A28714E3600EE4610 /* Preview Assets.xcassets */; };
 		E55EAD8328718A1400EE4610 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EAD8228718A1400EE4610 /* Coffee.swift */; };
 		E55EAD8528718B3B00EE4610 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EAD8428718B3B00EE4610 /* Order.swift */; };
+		E55EAD8828718F9500EE4610 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EAD8728718F9500EE4610 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E55EAD7A28714E3600EE4610 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E55EAD8228718A1400EE4610 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		E55EAD8428718B3B00EE4610 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		E55EAD8728718F9500EE4610 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 		E55EAD7228714E3500EE4610 /* Coffee Ordering */ = {
 			isa = PBXGroup;
 			children = (
+				E55EAD8628718F8900EE4610 /* Services */,
 				E55EAD8128718A0A00EE4610 /* Models */,
-				E55EAD7328714E3500EE4610 /* Coffee_OrderingApp.swift */,
 				E55EAD7528714E3500EE4610 /* ContentView.swift */,
+				E55EAD7328714E3500EE4610 /* Coffee_OrderingApp.swift */,
 				E55EAD7728714E3600EE4610 /* Assets.xcassets */,
 				E55EAD7928714E3600EE4610 /* Preview Content */,
 			);
@@ -79,6 +82,14 @@
 				E55EAD8428718B3B00EE4610 /* Order.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E55EAD8628718F8900EE4610 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E55EAD8728718F9500EE4610 /* WebService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				E55EAD7628714E3500EE4610 /* ContentView.swift in Sources */,
 				E55EAD7428714E3500EE4610 /* Coffee_OrderingApp.swift in Sources */,
 				E55EAD8528718B3B00EE4610 /* Order.swift in Sources */,
+				E55EAD8828718F9500EE4610 /* WebService.swift in Sources */,
 				E55EAD8328718A1400EE4610 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
