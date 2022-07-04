@@ -35,15 +35,19 @@ struct AddCoffeeOrderView: View {
                         Text("SELECT COFFEE")
                             .font(.body)
                     } footer: {
-                        Text("Total")
+                        OrderTotalView(total: addCoffeeOrderViewModel.total)
                     }
-                    HStack {
-                        Button("Place Order") {
-                            
-                        }.padding(EdgeInsets(top: 12, leading: 100, bottom: 12, trailing: 100))
-                            .foregroundColor(Color.white)
-                            .background(Color.blue)
-                            .cornerRadius(10)
+                    Section {
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Button("Place Order") {
+                                addCoffeeOrderViewModel.placeOrder()
+                            }.frame(width: 200, height: 50, alignment: .center)
+                                .foregroundColor(Color.white)
+                                .background(Color.blue)
+                                .cornerRadius(10)
+                            Spacer()
+                        }
                     }
                 }
                 .navigationTitle("Add Order")

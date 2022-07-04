@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class AddCoffeeOrderViewModel: ObservableObject {
-    @Published var name: String = ""
+    var name: String = ""
     @Published var size: String = "Medium"
     @Published var coffeeName: String = ""
     
